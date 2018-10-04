@@ -120,7 +120,7 @@ def IOS_DI():
         if s[34]:
 	    print datetime.datetime.now(), ",", options.host, ",", s[11], "," , s[28], ",", s[30], s[34], ",", s[14], ",", s[7]  
 	except:
-		print datetime.datetime.now(), ",", options.host, ",", "Hostname", ",", s[11], ",", tipname,  s[28], s[30], ",", "FAIL, FAIL, FAIL", ",", s[14], ",", s[7] time.sleep(1)
+	    print datetime.datetime.now(), ",", options.host, ",", "Hostname", ",", s[11], ",", tipname,  s[28], s[30], ",", "FAIL, FAIL, FAIL", ",", s[14], ",", s[7] time.sleep(1)
 
 def NXOS_DI():
         child.expect ("#")
