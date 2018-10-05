@@ -1,0 +1,29 @@
+uat:~$ python perspective.py --help
+Usage: perspective.py [options]
+
+Options:
+  -h, --help            show this help message and exit
+  -u USER, --username=USER
+                        user
+  -p PWORD, --password=PWORD
+                        pword
+  -z SNOOZE, --sleeptime=SNOOZE
+                        snooze
+  -P HOST, --proxy_host=HOST
+                        Proxy router
+  -C COUNT, --count=COUNT
+                        how many passes
+  -v VRF, --vrf=VRF     source VRF
+  -I SIP, --SingleIP=SIP
+                        single ping destination
+  -f TRG, --targetfile=TRG
+                        Target IP List
+  -r REPEAT, --repeat=REPEAT
+                        ping count
+  -s SIZE, --size=SIZE  ping size
+  -S SO, --source=SO    source interface
+  -t TO, --timeout=TO   Ping timeout
+  -Q TOS, --ToS=TOS     ToS Byte
+  -D HRDWRE, --hardware_type=HRDWRE
+                        IOS or Nexus
+uat:~$ python perspective.py -u uname -p pword -P 10.47.200.50 -C 50 -f DFW_TEST_IP -r 10 -D IOS -t 1 -S gigabitethernet0/1 -s 100 -z 5
