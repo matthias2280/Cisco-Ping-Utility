@@ -54,7 +54,7 @@ if re.match("[NnEeXxUuSs]", options.hrdwre):
 target = 'ssh -o StrictHostKeyChecking=no ' + options.user + '@' + options.host
 child = pexpect.spawn(target)
 child.expect ('[pP]assword:')
-child.sendline (pword)
+child.sendline (options.pword)
 child.expect ('#')
 child.sendline ("")
 child.expect ('#')
